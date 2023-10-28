@@ -38,6 +38,7 @@ def eval_KITTI_per_pair(loader, matcher, trans_evaluator, cls_evaluator, config)
             # 2. match descriptor and compute rigid transformation
             #################################
             model_timer.tic()
+            # src_keypts: [B, N, 3], tgt_keypts: [B, M, 3], src_features: [B, N, C], tgt_features: [B, M, C]
             pred_trans, pred_labels, src_keypts_corr, tgt_keypts_corr = matcher.estimator(src_keypts, tgt_keypts,
                                                                                           src_features,
                                                                                           tgt_features)

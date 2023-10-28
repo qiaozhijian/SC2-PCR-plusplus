@@ -5,7 +5,7 @@
     "ratio": 0.2,
     "k1": 40,
     "k2": 30,
-    "data_path": "data/KITTI/fpfh_test",
+    "data_path": "/media/qzj/Document/datasets/fpfh_test",
     "descriptor": "fpfh",
     "inlier_threshold": 0.6,
     "sigma_d": 0.6,
